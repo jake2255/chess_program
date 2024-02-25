@@ -6,11 +6,11 @@ public:
 protected:
 	char name;
 	int color;
-	bool alive;
 };
 
 class Pawn : public Pieces {
 public:
+	Pawn();
 	void Location();
 	void Movement();
 	void Promotion();
@@ -18,6 +18,7 @@ public:
 
 class King : public Pieces {
 public:
+	King();
 	void Location();
 	void Movement();
 	bool InCheck();
@@ -25,6 +26,7 @@ public:
 
 class Queen : public Pieces {
 public:
+	Queen();
 	void Location();
 	void Movement();
 };

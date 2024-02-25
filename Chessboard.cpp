@@ -1,8 +1,23 @@
 #include "Chessboard.h"
-#include "Pieces.h"
 
-void Chessboard::SetBoard() {
-	std::vector<std::vector<Pieces>>chessBoard;
+void Chessboard::DisplayBoard() {
+	for (int i = 0; i < 8; i++) {
+		std::cout << "---------------------------------" << std::endl;
+		for (int j = 0; j < 8; j++) {
+			std::cout << "| " << chessBoard[i][j].first << " ";
+		}
+		std::cout << "|" << std::endl;
+	}
+	std::cout << "---------------------------------" << std::endl;
 }
 
-void Chessboard::DisplayBoard() {}
+
+bool Chessboard::IsKingInCheck() {
+	return false;
+}
+
+bool Chessboard::IsGameOver() {
+	return false;
+}
+
+void Chessboard::PawnMovement() {}
