@@ -21,7 +21,7 @@
     <ClCompile Include="Chessboard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Pieces.cpp">
+    <ClCompile Include="OpponentMove.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +29,7 @@
     <ClInclude Include="Chessboard.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="Pieces.h">
+    <ClInclude Include="OpponentMove.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

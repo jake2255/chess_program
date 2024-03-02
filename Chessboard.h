@@ -3,20 +3,20 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <regex>
 
 class Chessboard {
 public:
 	void DisplayBoard();
 	bool IsKingInCheck();
 	bool IsGameOver();
-	void PawnMovement();
+	void PawnMovement(std::pair<int,int>);
 	//void KingMovement();
 	//void KnightMovement();
 	//void BishopMovement();
 	//void RookMovement();
 	//void QueenMovement();
-
+	void MakeMove(std::string);
+	std::pair<int,int> NotationTranslator(std::string);
 
 private:
 	// The initial chess board with all pieces
